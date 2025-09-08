@@ -1,0 +1,15 @@
+{
+  "name": "Access Shield Landing Page - Static",
+  "version": "1.0.0",
+  "type": "static",
+  "description": "Static HTML landing page for Access Shield AI",
+  "files": [
+    "landing_page.html",
+    "launch_landing_page.py",
+    "README.md",
+    "docs/"
+  ],
+  "requirements": [],
+  "deployment": "Static hosting (GitHub Pages, Netlify, Vercel)",
+  "created": "2025-09-08T14:37:08.522772"
+}

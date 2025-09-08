@@ -1,0 +1,23 @@
+{
+  "name": "Access Shield Landing Page - Docker",
+  "version": "1.0.0",
+  "type": "docker",
+  "description": "Docker containerized landing page for Access Shield AI",
+  "files": [
+    "Dockerfile",
+    "docker-compose.yml",
+    "requirements.txt",
+    "landing_page.py",
+    "templates/",
+    "static/",
+    "README.md"
+  ],
+  "requirements": [
+    "flask>=2.0.0",
+    "flask-socketio>=5.0.0",
+    "python-dotenv>=0.19.0",
+    "gunicorn>=20.0.0"
+  ],
+  "deployment": "Docker, Kubernetes, Cloud platforms",
+  "created": "2025-09-08T14:37:08.540772"
+}

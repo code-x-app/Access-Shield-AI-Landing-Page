@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Shield - Secure Access. Simplified.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+        }
+        .feature-card {
+            transition: transform 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .download-section {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+        }
+        .btn-download {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+        }
+        .btn-download:hover {
+            background: linear-gradient(45deg, #218838, #1ea085);
+            transform: translateY(-2px);
+        }
+        .security-badge {
+            background: linear-gradient(45deg, #dc3545, #fd7e14);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-shield-alt me-2"></i>Access Shield
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#download">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#support">Support</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">
+                <i class="fas fa-shield-alt me-3"></i>Access Shield
+            </h1>
+            <p class="lead mb-4">Secure Access. Simplified.</p>
+            <p class="mb-5">Access Shield continuously monitors accounts, teams, and repos for excessive privileges, risky workflows, and misconfigurations.<br>Built on Zero Trust principles with AI explainability — so you see not just alerts, but the "why" behind them.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <span class="security-badge">
+                            <i class="fas fa-lock me-1"></i>Zero Trust
+                        </span>
+                        <span class="security-badge">
+                            <i class="fas fa-brain me-1"></i>AI-Powered
+                        </span>
+                        <span class="security-badge">
+                            <i class="fas fa-chart-line me-1"></i>CIS/NIST
+                        </span>
+                        <span class="security-badge">
+                            <i class="fas fa-bug me-1"></i>MITRE ATT&CK
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Powerful Security Features</h2>
+                <p class="lead text-muted">Comprehensive access governance for your GitHub organization</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                <i class="fas fa-eye fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Real-time Monitoring</h5>
+                            <p class="card-text">Continuous monitoring of GitHub access changes, permissions, and security events with instant alerts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                <i class="fas fa-robot fa-3x text-success"></i>
+                            </div>
+                            <h5 class="card-title">AI-Powered Analysis</h5>
+                            <p class="card-text">Intelligent triage and analysis of security findings with AI agents that explain risks and suggest fixes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                <i class="fas fa-shield-alt fa-3x text-warning"></i>
+                            </div>
+                            <h5 class="card-title">Compliance Framework</h5>
+                            <p class="card-text">Built-in CIS, NIST, and MITRE ATT&CK compliance checks with automated posture assessment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                <i class="fas fa-bell fa-3x text-info"></i>
+                            </div>
+                            <h5 class="card-title">Multi-Channel Alerts</h5>
+                            <p class="card-text">Get notified via email, SMS, Slack, Teams, or webhooks when security issues are detected.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                <i class="fas fa-chart-bar fa-3x text-danger"></i>
+                            </div>
+                            <h5 class="card-title">Risk Scoring</h5>
+                            <p class="card-text">Advanced risk scoring algorithm that prioritizes findings based on severity and business impact.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                <i class="fas fa-history fa-3x text-secondary"></i>
+                            </div>
+                            <h5 class="card-title">Audit Trail</h5>
+                            <p class="card-text">Complete audit logging of all system activities with cryptographic integrity verification.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-4">Download Access Shield</h2>
+            <p class="lead mb-5">Get started with Access Shield in minutes. Choose your platform:</p>
+            
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <i class="fab fa-windows fa-3x text-primary mb-3"></i>
+                                    <h5>Windows</h5>
+                                    <p class="text-muted">Windows 10/11</p>
+                                    <a href="AccessShield-Client-v1.0.0.zip" class="btn btn-download text-white" download="AccessShield-Windows-v1.0.0.zip">
+                                        <i class="fas fa-download me-2"></i>Download EXE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <i class="fab fa-apple fa-3x text-secondary mb-3"></i>
+                                    <h5>macOS</h5>
+                                    <p class="text-muted">macOS 10.15+</p>
+                                    <a href="AccessShield-Client-v1.0.0.zip" class="btn btn-download text-white" download="AccessShield-macOS-v1.0.0.zip">
+                                        <i class="fas fa-download me-2"></i>Download DMG
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <i class="fab fa-linux fa-3x text-warning mb-3"></i>
+                                    <h5>Linux</h5>
+                                    <p class="text-muted">Ubuntu 20.04+</p>
+                                    <a href="AccessShield-Client-v1.0.0.zip" class="btn btn-download text-white" download="AccessShield-Linux-v1.0.0.zip">
+                                        <i class="fas fa-download me-2"></i>Download DEB
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-info">
+                <h5><i class="fas fa-info-circle me-2"></i>Quick Start Guide</h5>
+                <ol class="text-start">
+                    <li>Download the appropriate package for your platform</li>
+                    <li>Run the installer and follow the setup wizard</li>
+                    <li>Configure your GitHub credentials securely</li>
+                    <li>Set up notification channels (email, SMS, etc.)</li>
+                    <li>Start monitoring your GitHub organization</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Need Help?</h2>
+                <p class="lead text-muted">We're here to support you</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-book fa-3x text-primary mb-3"></i>
+                    <h5>Documentation</h5>
+                    <p class="text-muted">Comprehensive guides and API documentation</p>
+                    <a href="SETUP_GUIDE.md" class="btn btn-outline-primary" target="_blank">View Docs</a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-comments fa-3x text-success mb-3"></i>
+                    <h5>Community Support</h5>
+                    <p class="text-muted">Get help from our community and support team</p>
+                    <a href="CLIENT_INSTRUCTIONS.md" class="btn btn-outline-success" target="_blank">Quick Start</a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-envelope fa-3x text-info mb-3"></i>
+                    <h5>Enterprise Support</h5>
+                    <p class="text-muted">Dedicated support for enterprise customers</p>
+                    <a href="README.md" class="btn btn-outline-info" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-shield-alt me-2"></i>Access Shield</h5>
+                    <p class="text-muted">AI-Powered GitHub Access Governance</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-muted">&copy; 2024 Access Shield. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
